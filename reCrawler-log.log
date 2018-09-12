@@ -1,0 +1,875 @@
+2018-09-12 00:17:25,753 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:17:25,753 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:17:25,778 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:17:25,819 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:17:25,821 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:17:25,828 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:17:25,828 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:17:25,834 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:17:25,835 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:17:26,029 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:17:26,179 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:17:26,306 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:17:26,307 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 33568,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 17, 26, 306672),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66961408,
+ 'memusage/startup': 66961408,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 17, 25, 833741)}
+2018-09-12 00:17:26,307 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:23:58,136 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:23:58,137 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:23:58,181 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:23:58,229 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:23:58,233 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:23:58,239 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:23:58,240 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:23:58,250 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:23:58,251 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:23:58,405 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:23:58,429 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:23:58,529 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 50, in parse_list
+    yield index_date(item, base_url+response.xpath('//td[@class="title"]/a/@href').extract()[num][1:])
+NameError: name 'index_date' is not defined
+2018-09-12 00:23:58,541 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 50, in parse_list
+    yield index_date(item, base_url+response.xpath('//td[@class="title"]/a/@href').extract()[num][1:])
+NameError: name 'index_date' is not defined
+2018-09-12 00:23:58,543 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:23:58,543 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 33568,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 23, 58, 543523),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66879488,
+ 'memusage/startup': 66879488,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/NameError': 2,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 23, 58, 249957)}
+2018-09-12 00:23:58,544 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:25:12,661 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:25:12,662 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:25:12,687 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:25:12,722 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:25:12,724 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:25:12,727 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:25:12,727 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:25:12,733 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:25:12,734 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:25:13,078 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:25:13,120 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:25:13,192 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 50, in parse_list
+    yield self.index_data(item, base_url+response.xpath('//td[@class="title"]/a/@href').extract()[num][1:])
+TypeError: index_data() takes 2 positional arguments but 3 were given
+2018-09-12 00:25:13,237 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 50, in parse_list
+    yield self.index_data(item, base_url+response.xpath('//td[@class="title"]/a/@href').extract()[num][1:])
+TypeError: index_data() takes 2 positional arguments but 3 were given
+2018-09-12 00:25:13,239 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:25:13,240 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 33570,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 25, 13, 240186),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66969600,
+ 'memusage/startup': 66969600,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 2,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 25, 12, 733170)}
+2018-09-12 00:25:13,240 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:26:57,051 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:26:57,052 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:26:57,077 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:26:57,113 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:26:57,115 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:26:57,119 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:26:57,119 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:26:57,125 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:26:57,126 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:26:57,565 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:26:57,572 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:26:57,687 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 51, in parse_list
+    yield self.index_data(item, url_to_index)
+TypeError: index_data() takes 2 positional arguments but 3 were given
+2018-09-12 00:26:57,696 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 51, in parse_list
+    yield self.index_data(item, url_to_index)
+TypeError: index_data() takes 2 positional arguments but 3 were given
+2018-09-12 00:26:57,699 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:26:57,700 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 33568,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 26, 57, 699943),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66871296,
+ 'memusage/startup': 66871296,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 2,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 26, 57, 124705)}
+2018-09-12 00:26:57,700 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:27:13,686 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:27:13,687 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:27:13,713 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:27:13,748 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:27:13,751 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:27:13,754 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:27:13,754 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:27:13,760 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:27:13,761 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:27:13,816 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:27:13,819 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:27:13,934 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 51, in parse_list
+    yield self.index_data(item, url_to_index)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 55, in index_data
+    item_loader = ItemLoader(item=ReCrawlerItem(), response=response)
+NameError: name 'response' is not defined
+2018-09-12 00:27:13,943 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 51, in parse_list
+    yield self.index_data(item, url_to_index)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 55, in index_data
+    item_loader = ItemLoader(item=ReCrawlerItem(), response=response)
+NameError: name 'response' is not defined
+2018-09-12 00:27:13,946 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:27:13,946 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 33568,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 27, 13, 946458),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66793472,
+ 'memusage/startup': 66789376,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/NameError': 2,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 27, 13, 760044)}
+2018-09-12 00:27:13,946 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:27:30,126 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:27:30,127 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:27:30,162 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:27:30,198 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:27:30,200 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:27:30,203 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:27:30,203 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:27:30,208 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:27:30,210 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:27:30,332 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:27:30,397 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:27:30,448 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 51, in parse_list
+    yield self.index_data(item, url_to_index)
+TypeError: index_data() missing 1 required positional argument: 'val2'
+2018-09-12 00:27:30,515 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 51, in parse_list
+    yield self.index_data(item, url_to_index)
+TypeError: index_data() missing 1 required positional argument: 'val2'
+2018-09-12 00:27:30,517 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:27:30,518 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 604,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 33566,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 27, 30, 517936),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66850816,
+ 'memusage/startup': 66850816,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 2,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 27, 30, 208648)}
+2018-09-12 00:27:30,518 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:28:13,870 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:28:13,871 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:28:13,896 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:28:13,931 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:28:13,933 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:28:13,936 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:28:13,937 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:28:13,942 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:28:13,943 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:28:14,133 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:28:14,159 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:28:14,654 ERROR   : [scrapy.core.scraper] Error downloading <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930>
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 53, in process_response
+    spider=spider)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 39, in process_response
+    decoded_body = self._decode(response.body, encoding.lower())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 55, in _decode
+    body = gunzip(body)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 37, in gunzip
+    chunk = read1(f, 8196)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 24, in read1
+    return gzf.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 289, in read1
+    return self._buffer.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'\r\n')
+2018-09-12 00:28:14,709 ERROR   : [scrapy.core.scraper] Error downloading <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930>
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 53, in process_response
+    spider=spider)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 39, in process_response
+    decoded_body = self._decode(response.body, encoding.lower())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 55, in _decode
+    body = gunzip(body)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 37, in gunzip
+    chunk = read1(f, 8196)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 24, in read1
+    return gzf.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 289, in read1
+    return self._buffer.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'\r\n')
+2018-09-12 00:28:14,765 ERROR   : [scrapy.core.scraper] Error downloading <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930>
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 53, in process_response
+    spider=spider)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 39, in process_response
+    decoded_body = self._decode(response.body, encoding.lower())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 55, in _decode
+    body = gunzip(body)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 37, in gunzip
+    chunk = read1(f, 8196)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 24, in read1
+    return gzf.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 289, in read1
+    return self._buffer.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'\r\n')
+2018-09-12 00:28:14,771 ERROR   : [scrapy.core.scraper] Error downloading <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930>
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 53, in process_response
+    spider=spider)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 39, in process_response
+    decoded_body = self._decode(response.body, encoding.lower())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 55, in _decode
+    body = gunzip(body)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 37, in gunzip
+    chunk = read1(f, 8196)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 24, in read1
+    return gzf.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 289, in read1
+    return self._buffer.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'\r\n')
+2018-09-12 00:28:14,772 ERROR   : [scrapy.core.scraper] Error downloading <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930>
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 53, in process_response
+    spider=spider)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 39, in process_response
+    decoded_body = self._decode(response.body, encoding.lower())
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/downloadermiddlewares/httpcompression.py", line 55, in _decode
+    body = gunzip(body)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 37, in gunzip
+    chunk = read1(f, 8196)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/gz.py", line 24, in read1
+    return gzf.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 289, in read1
+    return self._buffer.read1(size)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'\r\n')
+2018-09-12 00:28:14,874 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:28:14,875 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 2734,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 405278,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 28, 14, 875043),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 5,
+ 'log_count/INFO': 7,
+ 'memusage/max': 66560000,
+ 'memusage/startup': 66560000,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 28, 13, 941723)}
+2018-09-12 00:28:14,876 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:29:12,781 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:29:12,781 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:29:12,809 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:29:12,811 WARNING : [py.warnings ] /Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcompression.HttpCompressionMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-09-12 00:29:12,846 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:29:12,848 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:29:12,851 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:29:12,851 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:29:12,859 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:29:12,860 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:29:13,909 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:29:13,919 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:29:14,171 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:14,255 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:14,261 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:14,264 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:14,272 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 59, in parse_contents
+    crawler_logger.info("The url of the target is: {}".format(page))   # logging example
+NameError: name 'page' is not defined
+2018-09-12 00:29:14,275 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:14,356 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 59, in parse_contents
+    crawler_logger.info("The url of the target is: {}".format(page))   # logging example
+NameError: name 'page' is not defined
+2018-09-12 00:29:14,362 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 59, in parse_contents
+    crawler_logger.info("The url of the target is: {}".format(page))   # logging example
+NameError: name 'page' is not defined
+2018-09-12 00:29:14,365 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 59, in parse_contents
+    crawler_logger.info("The url of the target is: {}".format(page))   # logging example
+NameError: name 'page' is not defined
+2018-09-12 00:29:14,376 ERROR   : [scrapy.core.scraper] Spider error processing <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+Traceback (most recent call last):
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/re_crawler/re_crawler/spiders/crawler.py", line 59, in parse_contents
+    crawler_logger.info("The url of the target is: {}".format(page))   # logging example
+NameError: name 'page' is not defined
+2018-09-12 00:29:14,477 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:29:14,479 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 2517,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 525223,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 29, 14, 478342),
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 5,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 66965504,
+ 'memusage/startup': 66965504,
+ 'request_depth_max': 1,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'spider_exceptions/NameError': 5,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 29, 12, 859225)}
+2018-09-12 00:29:14,479 INFO    : [scrapy.core.engine] Spider closed (finished)
+2018-09-12 00:29:46,870 INFO    : [scrapy.utils.log] Scrapy 1.4.0 started (bot: re_crawler)
+2018-09-12 00:29:46,870 INFO    : [scrapy.utils.log] Overridden settings: {'BOT_NAME': 're_crawler', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 're_crawler.spiders', 'SPIDER_MODULES': ['re_crawler.spiders']}
+2018-09-12 00:29:46,895 INFO    : [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-12 00:29:46,897 WARNING : [py.warnings ] /Users/btaek/Desktop/Teaching/KISA/sample_code/201809/KISA_re_crawler/lib/python3.6/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcompression.HttpCompressionMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-09-12 00:29:46,931 INFO    : [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-12 00:29:46,933 INFO    : [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-12 00:29:46,936 INFO    : [scrapy.middleware] Enabled item pipelines:
+['re_crawler.pipelines.ReCrawlerJsonExportPipeline']
+2018-09-12 00:29:46,936 INFO    : [scrapy.core.engine] Spider opened
+2018-09-12 00:29:46,944 INFO    : [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-12 00:29:46,945 DEBUG   : [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023
+2018-09-12 00:29:47,155 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:29:47,177 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=> (referer: None)
+2018-09-12 00:29:47,432 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:47,451 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:47,463 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:47,468 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=1&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:47,525 DEBUG   : [scrapy.core.engine] Crawled (200) <GET http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930> (referer: http://vip.mk.co.kr/newSt/price/newsFlash.php?p_page=2&stCode=005930&sCode=21&termDatef=&search=005930&topGubun=)
+2018-09-12 00:29:47,545 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930>
+{'title': ['예스티(122640)  소폭 상승세 +3.38%'],
+ 'url': ['http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188675&search=005930']}
+2018-09-12 00:29:47,564 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930>
+{'title': ['아남전자(008700)  소폭 상승세 +3.05%, 9거래일만에 반등, 외국계 매수 유입'],
+ 'url': ['http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148352&search=005930']}
+2018-09-12 00:29:47,584 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930>
+{'title': ['후성(093370)  소폭 상승세 +3.15%, 외국계 매수 유입'],
+ 'url': ['http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=22&c_uid=148356&search=005930']}
+2018-09-12 00:29:47,586 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930>
+{'title': ['이라이콤(041520)  소폭 상승세 +3.31%'],
+ 'url': ['http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=1&sCode=21&t_uid=23&c_uid=188769&search=005930']}
+2018-09-12 00:29:47,639 DEBUG   : [scrapy.core.scraper] Scraped from <200 http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930>
+{'title': ['크로바하이텍(043590)  소폭 상승세 +3.02%, 외국계 매수 유입'],
+ 'url': ['http://vip.mk.co.kr/newSt/price/news_view.php?stCode=005930&p_page=2&sCode=21&t_uid=23&c_uid=188657&search=005930']}
+2018-09-12 00:29:47,641 INFO    : [scrapy.core.engine] Closing spider (finished)
+2018-09-12 00:29:47,642 INFO    : [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 2517,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 525227,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 11, 15, 29, 47, 642143),
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 13,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 67108864,
+ 'memusage/startup': 67104768,
+ 'request_depth_max': 1,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'start_time': datetime.datetime(2018, 9, 11, 15, 29, 46, 944200)}
+2018-09-12 00:29:47,642 INFO    : [scrapy.core.engine] Spider closed (finished)
